@@ -150,7 +150,7 @@ export class WebhookService {
     // In a real application, this would make an HTTP POST request
     // For demo purposes, we'll simulate the request
     
-    console.log(`Sending webhook to ${webhook.url}`);
+  private async sendWebhook(webhook: Webhook, _data: any): Promise<void>
     
     // Simulate network delay
     await new Promise(resolve => setTimeout(resolve, 500));
